@@ -2,7 +2,7 @@
 
 Implementation of [Improving Deep Neural Network Sparsity through Decorrelation Regularization](https://www.ijcai.org/proceedings/2018/0453.pdf)
 
-It combined a regularization penalty with activation inhibition to encourages convolutional layers to learn a sparse, diverse set of kernels.
+It uses a regularization penalty during training to encourage convolutional layers to learn a sparse, diverse set of kernels.
 
 Can be used with keras convolutional layer like:
 
