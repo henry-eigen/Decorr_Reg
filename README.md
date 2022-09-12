@@ -6,13 +6,13 @@ It is a regularization penalty which encourages convolutional layers to learn a 
 
 Can be used with keras convolutional layer like:
 
-'''
+```
 from ssr import rc_reg
 
 x = keras.layers.SparseConv2D(...
                   ...
                   ...
                   kernel_regularizer=rc_reg(num_channels))(x)
-'''
+```
 
 The inpt_shape parameter should specify the number of channels in the previous layer's output. Note that this has nothing to do with the behavior of the regularization itself and everything to do with the fact that Tensorflow decided it couldn't guess the shape itself. 
